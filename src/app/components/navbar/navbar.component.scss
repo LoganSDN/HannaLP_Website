@@ -1,0 +1,52 @@
+.nav {
+	position: relative;
+	width: fit-content;
+}
+
+ul {
+	list-style-type: none;
+	padding: 1em;
+	background: #ffffff;
+	border-radius: 1.3em;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	justify-content: center;
+}
+
+li {
+	padding: 1em;
+}
+
+a {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+i {
+	color: #646464;
+	font-size: 1.1em;
+}
+
+a.active {
+	color: white;
+}
+
+a.active i {
+	transform: translateX(0px);
+}
+
+.link-background {
+	position: absolute;
+	background: antiquewhite;
+	border-radius: 1.2em;
+	width: 3.5em;
+	height: 3.5em;
+	z-index: 0;
+	transition: 0.4s cubic-bezier(0.7, 0, 0.38, 0.86) all;
+	top: 0.8em;
+    left: 0.8em;
+}

@@ -1,0 +1,36 @@
+<div class="d-flex h-100 w-100 overflow-hidden" style="background-color: #f3f3f3">
+  <div
+    class="d-flex h-100 justify-content-around flex-column p-3 position-sticky"
+  >
+    <div class="logo">
+      <a href="">
+        <h3>H</h3>
+      </a>
+    </div>
+    <div class="logo">
+      <a href="" class="d-flex justify-content-center align-items-center">
+        <i class="fas fa-arrow-left" style="margin-top: 0.25em"></i>
+      </a>
+    </div>
+    <app-navbar></app-navbar>
+  </div>
+  <div class="h-100 position-relative">
+	<app-news class="position-absolute news"></app-news>
+    <div class="body h-100 w-100 d-flex flex-row">
+      <div class="home">
+        <app-skeleton class="position-absolute" style="left: -647px;"></app-skeleton>
+      </div>
+      <div class="carousel d-flex gap-2 align-self-end" style="z-index: 2;">
+        <app-card
+          [backgroundColor]="'#FFF'"
+          date="17 juil"
+          title="Titre de la carte"
+          body="../../assets/images/ostheo.jpg"
+          [profilePicture]="'assets/images/ostheo.jpg'"
+          [isText]="false"
+          *ngFor="let card of cards"
+        ></app-card>
+      </div>
+    </div>
+  </div>
+</div>

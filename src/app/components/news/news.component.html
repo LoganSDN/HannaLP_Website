@@ -1,0 +1,18 @@
+<div class="d-flex position-relative">
+		<button mat-mini-fab (click)="toggleContainer()" class="position-absolute">
+			hello
+			<mat-icon>add</mat-icon>
+		</button>
+	<div class="news-ctnr glass overflow-auto" [class.opened]="isContainerOpened">
+		<h2 class="news-title">Dernières actualitées</h2>
+		<div>
+			<ul>
+				<li *ngFor="let card of cards">
+					<app-card [backgroundColor]="'#FFF'" date="17 juil" title="Titre de la carte"
+						body="../../assets/images/ostheo.jpg" [profilePicture]="'../../assets/images/ostheo.jpg'"
+						[isText]="false"></app-card>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
